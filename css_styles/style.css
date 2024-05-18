@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600&family=Cabin:ital@1&family=Fira+Sans:ital,wght@0,900;1,400&family=Kanit&family=Lato:wght@700&family=Mulish&family=PT+Sans+Narrow&family=Playpen+Sans:wght@500&family=Prompt&family=Roboto+Condensed:ital,wght@1,500&family=Rowdies&family=Sometype+Mono&family=Space+Grotesk:wght@700&display=swap');
+
+/* *Default value for the page elements. */
+html{
+
+    font-size: 62.4%;
+    overflow: hidden;
+
+}
+
+/* *Page main colors. */
+:root{
+
+    --gold:#e0c112;
+    --coal:#141414;
+    --platinium:#d3cfcf;
+    --markBlue:#11083d;
+    --productColor:#dfee5d;
+    --productHover:#6fdb17;
+
+    --buttonsColor:#2d2e2e;
+}
+
+*::selection{
+
+    background: var(--gold);
+    color:azure;
+
+}
+
+
+body{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-color: whitesmoke;
+
+}
+
+.motherBox{
+
+    width: 80vw;
+    height: 100vh;
+
+}
+
+.image-logo-container{
+
+    margin-right: 15rem;
+    margin-left: 6rem;
+
+    flex-flow: column;
+    align-content: center;
+
+}
+
+.menu-container{
+
+    display: flex;
+    flex-flow: row;
+
+    background-color:var(--markBlue);
+
+    width:100%;
+
+    height: 14%;
+
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+
+}
+
+.optionContainer{
+
+    display: flex;
+    flex-flow:row;
+    align-self: end;
+
+    font-size: 2.5rem;
+    gap: 3rem;
+    
+    height: 100%;
+
+    background:var(--markBlue);
+
+}
+
+#stackedMenuAccess{
+
+    display: none;
+
+}
+
+#labelStackedMenuAccess{
+
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+
+    color:var(--gold);
+
+    display: flex;
+    
+}
+
+.menuOption{
+
+    font-family: 'Kanit', sans-serif;
+    color: azure;
+    
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+
+    text-decoration:none;
+    
+    transition: 500ms;
+
+    background-color: var(--markBlue);
+
+}
+
+.menuOption:hover{
+
+    color:var(--gold);
+
+}
+
+.image-logo{
+
+    font-family: 'Kanit',sans-serif;
+
+    color:white;
+
+    text-decoration: none;
+
+    transition: 500ms;
+
+    font-size: 4.6rem;
+
+}
+
+.image-logo:hover{
+
+    color:#464242;
+
+}
+
+.logoSpan{
+
+    color:var(--gold);
+    
+    transition:500ms;
+
+}
+
+.logoSpan:hover{
+
+    color:var(--platinium);
+
+}
+
+.pageContentContainer{
+
+    display: flex;
+    flex-flow: row;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position:center;
+
+    width:100%;
+    height:100vh;
+
+    padding-bottom: 5rem;
+
+}
+
+#textContainer{
+
+    display: flex;
+    flex-flow:column;
+    justify-content: start;
+    box-sizing: border-box;
+
+    margin-left: 8rem;
+    margin-top: 20rem;
+
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    height: fit-content;
+
+}
+
+#hearphoneImageContainer{
+
+    display: flex;
+    flex-flow: row;
+    align-content: start;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: 2rem;
+    margin-top: 4rem;
+
+}
+
+#hearPhoneImage{
+
+    width: 100%;
+    height: 60%;
+
+    animation:float 2.3s linear infinite;
+
+    align-self: start;
+
+}
+
+#hearphonesText{
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    font-size:1.6rem;
+    width: 52rem;
+
+}
+
+.buttonLink{
+
+/**Costume*/
+    text-decoration: none;
+    color:var(--productColor);
+    font-family:'Kanit', sans-serif;
+    
+/**animation*/
+    transition: 1.6s; 
+
+}
+
+.buttonLink:hover{
+
+    color:var(--productHover);
+
+}
+
+.button{
+
+/**size values*/
+    margin-right: 12%;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+
+/**Position*/
+    align-self: end;
+
+/**Costume*/
+    background-color:var(--buttonsColor);
+    box-shadow: 0.54rem 0.4rem rgba(0, 0, 0, 0.2);
+
+    /**animation*/
+    transition: 0.5s; 
+
+}
+
+
+.button:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+@keyframes float{
+
+    0%,100%{
+
+        transform: translateY(0rem);
+
+    }
+
+    50%{
+
+        transform: translateY(2.2rem);
+
+    }
+
+}
+
+#productTittle{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:3.2rem;
+
+}
+
+#spanHearphonesId{
+
+    color:var(--platinium);
+
+}
+
+@media(max-width:1370px){
+    
+
+    #hearphoneImageContainer{
+
+        width: 50%;
+
+    }
+
+    .menuOption{
+    
+        flex-flow:row;
+        align-content: center;
+
+        width: 7.7rem;
+        height: 2rem;
+    
+        font-size:1.5rem;
+    
+        transition: 500ms;
+    
+    }
+
+    .optionContainer{
+
+        width: 70%;
+        gap:1rem;
+
+    }
+
+    #hearPhoneImage{
+
+        transform: translateX(5rem);
+
+    }
+
+    .image-logo-container{
+
+        margin-right: 0%;
+        margin-left: 1rem;
+    
+        font-family: 'Kanit',sans-serif;
+    
+        color:white;
+    
+        width: 30%;
+
+    }
+
+    .image-logo{
+
+        font-size: 3rem;
+
+    }
+
+    .menu-container{
+
+        height: 8%;
+        width: 100%;
+
+    }
+
+
+    #hearPhoneImage{
+    
+        width: 100%;
+        height: 60%;
+
+    }
+
+
+    #productTittle{
+
+        font-size: 1.5rem;
+
+    }
+
+    #textContainer{
+
+        margin-top: 17rem;
+        margin-left:2rem;
+
+        width: 50%;
+
+    }
+
+    #hearphonesText{
+
+        font-size: 1.4rem;
+        width:100%;
+
+    }
+
+    .button{
+
+        font-size: 1.3rem;
+
+    }
+
+}
+
+@media(max-width:877px){
+
+
+    .optionContainer{
+
+        display: none;
+        flex-flow: row;
+
+        height: 100%;
+        width: 100%;
+
+        margin-left: 0%;
+        margin-top: 0%;
+
+        margin-bottom: 0%;
+
+        transform: translateY(-2.7rem);
+        
+
+        background: #190d58;
+
+    }
+
+    .menuOption{
+
+        width: 10rem;
+        height: 100%;
+        margin-top: 0%;
+
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+
+        background: #190d58;
+
+    }
+
+    .image-logo-container{
+
+        transform: translateX(1rem) translateY(-0.2rem);
+
+    }
+
+    .image-logo{
+
+        width: 5rem;
+
+        font-size: 3rem;
+        margin-bottom: 0%;
+        padding: 0%;
+
+    }
+
+    .menu-container{
+
+        display: block;
+
+        width: 100%;
+
+        padding: 0%;
+
+    }
+
+
+    #labelStackedMenuAccess{
+
+        visibility: visible;
+
+        transform: translateX(52rem) translateY(-3.6rem);
+
+        font-size: 2.5rem;
+        color:var(--gold);
+        opacity: 1;
+
+        align-self: center;
+
+    }
+    
+    #stackedMenuAccess:checked ~ .optionContainer{
+
+        display: flex;
+
+    }
+
+    .pageContentContainer{
+
+        flex-flow: column-reverse;
+        justify-content: start;
+        align-content: center;
+
+        gap: 0%;
+        padding: 0%;
+
+    }
+
+    #hearPhoneImage{
+
+        width:70%;
+        height:100%;
+        
+    }
+
+    #productTittle{
+
+        font-size: 1.5rem;
+        align-self: center;
+
+    }
+
+    #hearphonesText{
+
+        font-size: 1.2rem;
+
+    }
+
+    #hearphoneImageContainer{
+
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        align-content: center;
+        flex-wrap: wrap;
+
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+
+        width: 100%;
+        height: 50%;
+
+    }
+
+
+    #textContainer{
+
+        justify-content: start;
+
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 100%;
+
+    }
+
+
+
+    @keyframes float{
+
+        0%,100%{
+    
+            transform: translateY(6rem);
+    
+        }
+    
+        50%{
+    
+            transform: translateY(7.2rem);
+    
+        }
+    
+
+    }
+    
+}
+
+
+@media(max-width:679px){
+
+    #labelStackedMenuAccess{
+
+        transform: translateX(43rem) translateY(-3.2rem); 
+
+    }
+
+}
+
+
+@media(max-width:570px){
+
+    #labelStackedMenuAccess{
+
+        transform: translateX(31rem) translateY(-3.2rem); 
+
+    }
+
+}

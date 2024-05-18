@@ -1,0 +1,148 @@
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html{
+
+    overflow: hidden;
+
+}
+
+:root{
+
+    --text-color:#252424;
+    --feature-tittle:#dbc928;
+
+}
+
+
+body{
+
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+
+    background-image: url("../images/background.jpg");
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+    font-size: 2rem;
+
+}
+
+.mother-box {
+
+    background-color: azure;
+    width: 80%;
+    height: 100%;
+
+}
+
+.about-us-info-container{
+
+    width: 64%;
+    height: 25%;
+
+    text-align: center;
+
+}
+
+.main-tittle{
+
+    font-size: 2.5rem;
+
+    color:var(--markBlue);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+.text-box{
+
+    text-align: center;
+
+}
+
+.feature-text{
+
+    width: 30%;
+
+}
+
+.feature-tittle{
+
+    width: 10%;
+
+    color:var(--feature-tittle);
+
+}
+
+
+#Angel-span{
+
+
+    color: var(--gold);
+
+
+}
+
+#tech-span{
+
+    color: #6d6868;
+
+}
+
+#page-content-box{
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 3rem;
+
+    width: 100%;
+    height: 120%;
+
+}
+
+#Angel-tech-text{
+
+    color: var(--text-color);
+
+}
+
+
+#company-features{
+
+    height: 100%;
+    width: 80%;
+
+    margin-top: 7rem;
+
+}
+
+.feature-container{
+
+    display: flex;
+    flex-flow: row;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    width: 100%;
+    height: 25%;
+}
+
+.feature-image{
+
+    width: 60%;
+    height: 100%;
+
+}
