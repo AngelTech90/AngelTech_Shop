@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inconsolata:wdth,wght@79.3,200..900&display=swap');
+
+
+
 *{
 
     margin:0;
@@ -47,11 +51,12 @@ body{
 
 }
 
-.mother-box {
+.motherBox {
 
     background-color: azure;
     width: 80%;
     height: 100%;
+
 
 }
 
@@ -189,10 +194,186 @@ body{
 
     width: 100%;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     background: whitesmoke;
+}
+
+
+.formLabel{
+
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.1rem;
+
 
 }
+
+
+.formInput{
+
+    width: 65%;
+    height: 8%;
+
+    border-radius: 0.5rem;
+
+    margin-left: 1.5rem;
+    margin-bottom:1rem;
+
+    text-align: center;
+
+    border-color: #d3cfcf;
+
+    border-style:hidden;
+
+}
+
+.registerForm{
+
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+
+    font-family: "Archivo Black", sans-serif;
+
+    padding-top: 3rem;
+
+    border-radius: 1rem;
+
+    width: 40%;
+    height: 80%;
+
+    font-size: 1.5rem;
+
+    margin-top: 3rem;
+
+    background-color: #d8db17;
+
+}
+
+
+#formBox{
+
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: center;
+
+    width: 85%;
+    height: 65%;
+
+    border-radius:1.5rem ;
+
+    padding-left: 10%;
+    padding-right: 6%;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/login_background.jpg");
+
+}
+
+
+
+.endOfThePage{
+
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+
+    background-color: var(--gold);
+
+    width: 100%;
+    height: 20vh;
+
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.4);
+
+}
+
+
+.footerLink{
+
+    color:azure;
+
+    font-size: 1.5rem;
+
+    font-family: Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: 300ms linear;
+
+}
+
+
+.footerLink:hover{
+
+    color:var(--buttonsColor);
+
+}
+
+
+#footerFeatures{
+
+    display: flex;
+
+    flex-flow: row;
+
+    gap:1rem;
+
+    align-items: center;
+
+    margin-right: 13rem;
+
+}
+
+
+#socialMediaInconsBox{
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+
+.socialMediaLink{
+
+    text-decoration: none;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+.socialMediaIcon{
+
+    width: 3rem;
+    height: 3rem;
+
+}
+
+
+#socialMediaTitle{
+
+    color:var(--coal);
+
+    font-size: 1.5rem;
+
+    font-family: Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+
+}
+
+
+
 
 @media(max-width:1366px){
 
@@ -207,6 +388,62 @@ body{
 
 @media(max-width:380px){
 
+    .pageContentContainer{
+
+        justify-content: flex-end;
+
+        flex-flow: column-reverse;
+
+        margin: 0;
+
+        padding: 0;
+
+        gap:0;
+
+    }
+
+
+    #productTittle{
+
+        font-size: 0.7rem;
+
+    }
+
+
+    #hearphoneImageContainer{
+
+        padding: 0;
+        margin:0 0 0 0;
+
+    }
+
+
+    #hearphonesText{
+
+        font-size: 0.5rem;
+
+        padding: 0;
+
+        margin-left: 0.3rem;
+
+    }
+
+
+    .button{
+
+        font-size: 0.6rem;
+
+    }
+
+
+    #hearPhoneImage{
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
 
     .optionContainer{
 
@@ -217,21 +454,20 @@ body{
         height: 2rem;
         width: 100%;
 
-        margin-left: 0%;
-        margin-top: 0;
-
-        margin-bottom: 0%;
+        margin: 0;
 
         background: #190d58;
 
-
     }
+
 
     .menu-container{
 
         flex-flow: column;
 
-        padding: 0%;
+        padding: 0;
+
+        margin: 0;
 
     }
 
@@ -242,14 +478,6 @@ body{
 
     }
 
-
-
-    .menu-container{
-
-
-        height: 2.5%;
-
-    }
 
 
     #labelStackedMenuAccess{
@@ -265,6 +493,7 @@ body{
 
     }
 
+
     .menuOption{
 
         font-size: 0.5rem;
@@ -273,7 +502,7 @@ body{
         justify-content: center;
         text-align: center;
 
-        margin-top: 0%;
+        margin:0;
 
         background: #190d58;
 
@@ -298,5 +527,77 @@ body{
 
     }
 
+
+    #textContainer{
+
+        margin-top: 0;
+
+    }
+
+
+    #socialMediaTitle{
+
+
+        font-size: 0.65rem;
+
+    }
+
+
+    .socialMediaIcon{
+
+        width: 1rem;
+        height: 1rem;
+
+    }
+
+
+    .footerSection{
+
+        justify-content: center;
+
+        margin-right: 0.2rem;
+
+    }
+
+
+    #socialMediaInconsBox{
+
+        gap: 0.5rem;
+
+    }
+
+    
+
+    .footerLink{
+
+        color:azure;
+    
+        font-size: 0.8rem;
+    
+        font-family: Geneva, Tahoma, sans-serif;
+    
+        text-align: center;
+    
+        text-decoration: none;
+    
+        transition: 300ms linear;
+    
+    }
+    
+    
+    #footerFeatures{
+    
+        display: flex;
+    
+        flex-flow: column;
+    
+        gap:0.4rem;
+    
+        align-items: center;
+    
+        margin-right: 2rem;
+    
+    }
+    
 
 }

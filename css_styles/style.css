@@ -352,6 +352,8 @@ body{
 
     margin-right: 2rem;
 
+    gap:0.4rem;
+
 }
 
 
@@ -363,7 +365,6 @@ body{
     gap: 1rem;
 
 }
-
 
 .socialMediaLink{
 
@@ -392,6 +393,45 @@ body{
     font-family: Geneva, Tahoma, sans-serif;
 
     text-align: center;
+
+}
+
+
+.footerLink{
+
+    color:azure;
+
+    font-size: 1.5rem;
+
+    font-family: Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: 300ms linear;
+
+}
+
+
+.footerLink:hover{
+
+    color:var(--buttonsColor);
+
+}
+
+
+#footerFeatures{
+
+    display: flex;
+
+    flex-flow: row;
+
+    gap:1rem;
+
+    align-items: center;
+
+    margin-right: 13rem;
 
 }
 
@@ -581,12 +621,44 @@ body{
     }
 
 
-
-
     #socialMediaInconsBox{
 
         gap: 0.5rem;
 
     }
+
+
+
+    .footerLink{
+
+        color:azure;
+    
+        font-size: 0.8rem;
+    
+        font-family: Geneva, Tahoma, sans-serif;
+    
+        text-align: center;
+    
+        text-decoration: none;
+    
+        transition: 300ms linear;
+    
+    }
+    
+    
+    #footerFeatures{
+    
+        display: flex;
+    
+        flex-flow: column;
+    
+        gap:0.4rem;
+    
+        align-items: center;
+    
+        margin-right: 2rem;
+    
+    }
+    
 
 }
