@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600&family=Cabin:ital@1&family=Fira+Sans:ital,wght@0,900;1,400&family=Kanit&family=Lato:wght@700&family=Mulish&family=PT+Sans+Narrow&family=Playpen+Sans:wght@500&family=Prompt&family=Roboto+Condensed:ital,wght@1,500&family=Rowdies&family=Sometype+Mono&family=Space+Grotesk:wght@700&display=swap');
 
-/* *Default value for the page elements. */
-html{
-
-    font-size: 62.4%;
-    overflow: hidden;
-
-}
-
 /* *Page main colors. */
 :root{
 
@@ -19,6 +11,8 @@ html{
     --productHover:#6fdb17;
 
     --buttonsColor:#2d2e2e;
+
+    --footerBackgroundColor:#f5ec00;
 }
 
 *::selection{
@@ -41,15 +35,12 @@ body{
 
 .motherBox{
 
-    width: 80vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
 
 }
 
-.image-logo-container{
-
-    margin-right: 15rem;
-    margin-left: 6rem;
+#image-logo-container{
 
     flex-flow: column;
     align-content: center;
@@ -60,12 +51,13 @@ body{
 
     display: flex;
     flex-flow: row;
+    align-items: center;
 
     background-color:var(--markBlue);
 
     width:100%;
 
-    height: 14%;
+    height: 17%;
 
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
 
@@ -75,10 +67,13 @@ body{
 
     display: flex;
     flex-flow:row;
-    align-self: end;
 
-    font-size: 2.5rem;
-    gap: 3rem;
+    margin-left: 2rem;
+
+    justify-content: center;
+    align-content: center;
+
+    gap: 1.5rem;
     
     height: 100%;
 
@@ -86,11 +81,13 @@ body{
 
 }
 
+
 #stackedMenuAccess{
 
     display: none;
 
 }
+
 
 #labelStackedMenuAccess{
 
@@ -104,6 +101,7 @@ body{
     
 }
 
+
 .menuOption{
 
     font-family: 'Kanit', sans-serif;
@@ -113,6 +111,7 @@ body{
     align-self: center;
     justify-content: center;
     
+    font-size: 2rem;
 
     text-decoration:none;
     
@@ -122,11 +121,13 @@ body{
 
 }
 
+
 .menuOption:hover{
 
     color:var(--gold);
 
 }
+
 
 .image-logo{
 
@@ -138,15 +139,22 @@ body{
 
     transition: 500ms;
 
-    font-size: 4.6rem;
+    font-size: 2.6rem;
+
+    margin-left: 1rem;
+    margin-right: 2rem;
+
+    font-size: 3.6rem;
 
 }
+
 
 .image-logo:hover{
 
     color:#464242;
 
 }
+
 
 .logoSpan{
 
@@ -156,11 +164,14 @@ body{
 
 }
 
+
 .logoSpan:hover{
 
     color:var(--platinium);
 
 }
+
+
 
 .pageContentContainer{
 
@@ -178,15 +189,14 @@ body{
 
 }
 
+
 #textContainer{
+
+    margin-top: 20%;
 
     display: flex;
     flex-flow:column;
     justify-content: start;
-    box-sizing: border-box;
-
-    margin-left: 8rem;
-    margin-top: 20rem;
 
     color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -194,6 +204,7 @@ body{
     height: fit-content;
 
 }
+
 
 #hearphoneImageContainer{
 
@@ -209,10 +220,11 @@ body{
 
 }
 
+
 #hearPhoneImage{
 
-    width: 100%;
-    height: 60%;
+    width: 500px;
+    height: 500px;
 
     animation:float 2.3s linear infinite;
 
@@ -220,16 +232,19 @@ body{
 
 }
 
+
 #hearphonesText{
 
     display: flex;
-    justify-content: center;
-    flex-flow: column;
 
-    font-size:1.6rem;
-    width: 52rem;
+    padding-left: 2rem;
+
+    width: 100%;
+
+    font-size:1.3rem;
 
 }
+
 
 .buttonLink{
 
@@ -243,11 +258,13 @@ body{
 
 }
 
+
 .buttonLink:hover{
 
     color:var(--productHover);
 
 }
+
 
 .button{
 
@@ -292,12 +309,16 @@ body{
 
 }
 
+
 #productTittle{
 
+    padding-left: 2.5rem;
+
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:3.2rem;
+    font-size:2.2rem;
 
 }
+
 
 #spanHearphonesId{
 
@@ -305,288 +326,266 @@ body{
 
 }
 
-@media(max-width:1370px){
-    
 
-    #hearphoneImageContainer{
+.endOfThePage{
 
-        width: 50%;
+    display: flex;
+    flex-flow: row-reverse;
 
-    }
+    background-color: var(--gold);
+
+    width: 100%;
+    height: 20vh;
+
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.4);
+
+}
+
+
+.footerSection{
+
+    display: flex;
+
+    flex-flow: column;
+
+    height: 100%;
+
+    margin-right: 2rem;
+
+}
+
+
+#socialMediaInconsBox{
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+
+.socialMediaLink{
+
+    text-decoration: none;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+.socialMediaIcon{
+
+    width: 3rem;
+    height: 3rem;
+
+}
+
+
+#socialMediaTitle{
+
+    color:var(--coal);
+
+    font-size: 1.5rem;
+
+    font-family: Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+
+}
+
+
+@media(max-width:1366px){
 
     .menuOption{
-    
-        flex-flow:row;
-        align-content: center;
 
-        width: 7.7rem;
-        height: 2rem;
-    
-        font-size:1.5rem;
-    
-        transition: 500ms;
-    
-    }
-
-    .optionContainer{
-
-        width: 70%;
-        gap:1rem;
+        font-size: 1.6rem;
 
     }
 
-    #hearPhoneImage{
-
-        transform: translateX(5rem);
-
-    }
-
-    .image-logo-container{
-
-        margin-right: 0%;
-        margin-left: 1rem;
-    
-        font-family: 'Kanit',sans-serif;
-    
-        color:white;
-    
-        width: 30%;
-
-    }
-
-    .image-logo{
-
-        font-size: 3rem;
-
-    }
-
-    .menu-container{
-
-        height: 8%;
-        width: 100%;
-
-    }
+}
 
 
-    #hearPhoneImage{
-    
-        width: 100%;
-        height: 60%;
+@media(max-width:380px){
+
+    .pageContentContainer{
+
+        justify-content: flex-end;
+
+        flex-flow: column-reverse;
+
+        margin: 0;
+
+        padding: 0;
+
+        gap:0;
 
     }
 
 
     #productTittle{
 
-        font-size: 1.5rem;
+        font-size: 0.7rem;
 
     }
 
-    #textContainer{
 
-        margin-top: 17rem;
-        margin-left:2rem;
+    #hearphoneImageContainer{
 
-        width: 50%;
+        padding: 0;
+        margin:0 0 0 0;
 
     }
+
 
     #hearphonesText{
 
-        font-size: 1.4rem;
-        width:100%;
+        font-size: 0.5rem;
+
+        padding: 0;
+
+        margin-left: 0.3rem;
 
     }
+
 
     .button{
 
-        font-size: 1.3rem;
+        font-size: 0.6rem;
 
     }
 
-}
 
-@media(max-width:877px){
+    #hearPhoneImage{
+
+        width: 100%;
+
+        height: 100%;
+
+    }
 
 
     .optionContainer{
 
         display: none;
+
         flex-flow: row;
 
-        height: 100%;
+        height: 2rem;
         width: 100%;
 
-        margin-left: 0%;
-        margin-top: 0%;
-
-        margin-bottom: 0%;
-
-        transform: translateY(-2.7rem);
-        
+        margin: 0;
 
         background: #190d58;
 
     }
 
+
+    .menu-container{
+
+        flex-flow: column;
+
+        padding: 0;
+
+        margin: 0;
+
+    }
+
+
+    #stackedMenuAccess:checked~.optionContainer{
+        
+        display: flex;
+
+    }
+
+
+
+    #labelStackedMenuAccess{
+
+        font-size: 1rem;
+
+        visibility: visible;
+
+        color:var(--gold);
+        opacity: 1;
+
+        transform: translateY(-1.1rem) translateX(5rem);
+
+    }
+
+
     .menuOption{
 
-        width: 10rem;
-        height: 100%;
-        margin-top: 0%;
+        font-size: 0.5rem;
 
         flex-flow: column;
         justify-content: center;
         text-align: center;
 
+        margin:0;
+
         background: #190d58;
 
     }
 
-    .image-logo-container{
-
-        transform: translateX(1rem) translateY(-0.2rem);
-
-    }
 
     .image-logo{
 
-        width: 5rem;
+        font-size: 1.7rem;
 
-        font-size: 3rem;
         margin-bottom: 0%;
         padding: 0%;
 
-    }
-
-    .menu-container{
-
-        display: block;
-
-        width: 100%;
-
-        padding: 0%;
+        margin-left: 9.5rem;
 
     }
 
 
-    #labelStackedMenuAccess{
+    .image-logo-container{
 
-        visibility: visible;
-
-        transform: translateX(52rem) translateY(-3.6rem);
-
-        font-size: 2.5rem;
-        color:var(--gold);
-        opacity: 1;
-
-        align-self: center;
-
-    }
-    
-    #stackedMenuAccess:checked ~ .optionContainer{
-
-        display: flex;
-
-    }
-
-    .pageContentContainer{
-
-        flex-flow: column-reverse;
-        justify-content: start;
-        align-content: center;
-
-        gap: 0%;
-        padding: 0%;
-
-    }
-
-    #hearPhoneImage{
-
-        width:70%;
-        height:100%;
-        
-    }
-
-    #productTittle{
-
-        font-size: 1.5rem;
-        align-self: center;
-
-    }
-
-    #hearphonesText{
-
-        font-size: 1.2rem;
-
-    }
-
-    #hearphoneImageContainer{
-
-        display: flex;
-        flex-flow: column;
-        justify-content: start;
-        align-content: center;
-        flex-wrap: wrap;
-
-        margin-top: 0%;
-        margin-left: 0%;
-        margin-right: 0%;
-
-        width: 100%;
-        height: 50%;
+        transform: translateY(0.4rem) translateX(-6.5rem);
 
     }
 
 
     #textContainer{
 
-        justify-content: start;
+        margin-top: 0;
 
-        margin-top: 3rem;
-        margin-left: 1rem;
-        width: 100%;
+    }
+
+
+    #socialMediaTitle{
+
+
+        font-size: 0.65rem;
+
+    }
+
+
+    .socialMediaIcon{
+
+        width: 1rem;
+        height: 1rem;
+
+    }
+
+
+    .footerSection{
+
+        justify-content: center;
+
+        margin-right: 0.2rem;
 
     }
 
 
 
-    @keyframes float{
 
-        0%,100%{
-    
-            transform: translateY(6rem);
-    
-        }
-    
-        50%{
-    
-            transform: translateY(7.2rem);
-    
-        }
-    
+    #socialMediaInconsBox{
 
-    }
-    
-}
-
-
-@media(max-width:679px){
-
-    #labelStackedMenuAccess{
-
-        transform: translateX(43rem) translateY(-3.2rem); 
-
-    }
-
-}
-
-
-@media(max-width:570px){
-
-    #labelStackedMenuAccess{
-
-        transform: translateX(31rem) translateY(-3.2rem); 
+        gap: 0.5rem;
 
     }
 
