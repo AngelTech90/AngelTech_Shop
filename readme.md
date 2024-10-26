@@ -1,16 +1,4 @@
-Features of program:
+# Deployed page:
+https://angeltech90.github.io/AngelTech_Shop/index.html
 
-there as shop template that could be modified easily
-
-the requirements are:
-
-html
-css
-js
-nodejs
-sql
-sql server
-
-
-SUNDAY WORK:
-Structure and developt options menu html documents
+# On development
