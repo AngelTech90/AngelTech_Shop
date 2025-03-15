@@ -34,10 +34,8 @@ body{
 }
 
 .motherBox{
-
-    width: 80%;
+    width: 100%;
     height: 100%;
-
 }
 
 #image-logo-container{
@@ -48,120 +46,77 @@ body{
 }
 
 .menu-container{
-
     display: flex;
     flex-flow: row;
     align-items: center;
-
     background-color:var(--markBlue);
-
     width:100%;
-
     height: 17%;
-
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
-
 }
 
 .optionContainer{
-
     display: flex;
     flex-flow:row;
-
     margin-left: 2rem;
-
     justify-content: center;
     align-content: center;
-
     gap: 1.5rem;
-    
     height: 100%;
-
     background:var(--markBlue);
-
 }
 
 
 #stackedMenuAccess{
-
     display: none;
-
 }
 
 
 #labelStackedMenuAccess{
-
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-
     color:var(--gold);
-
     display: flex;
-    
 }
 
 
 .menuOption{
-
     font-family: 'Kanit', sans-serif;
     color: azure;
-    
     display: flex;
     align-self: center;
     justify-content: center;
-    
     font-size: 2rem;
-
     text-decoration:none;
-    
     transition: 500ms;
-
     background-color: var(--markBlue);
-
 }
-
 
 .menuOption:hover{
-
     color:var(--gold);
-
 }
 
-
 .image-logo{
-
     font-family: 'Kanit',sans-serif;
-
     color:white;
-
     text-decoration: none;
-
     transition: 500ms;
-
     font-size: 2.6rem;
-
     margin-left: 1rem;
     margin-right: 2rem;
-
     font-size: 3.6rem;
-
 }
 
 
 .image-logo:hover{
-
     color:#464242;
-
 }
 
 
 .logoSpan{
-
     color:var(--gold);
-    
     transition:500ms;
-
 }
 
 
@@ -450,181 +405,121 @@ body{
 @media(max-width:500px){
 
     .pageContentContainer{
-
         justify-content: flex-end;
-
         flex-flow: column-reverse;
-
         margin: 0;
-
         padding: 0;
-
-        gap:0;
-
+        gap: 0;
     }
-
-
+    
     #productTittle{
-
-        font-size: 0.7rem;
-
+        font-size: 1.4rem;
     }
-
 
     #hearphoneImageContainer{
-
         padding: 0;
         margin:0 0 0 0;
-
     }
 
 
     #hearphonesText{
-
-        font-size: 0.5rem;
-
+        font-size: 0.8rem;
         padding: 0;
-
         margin-left: 0.3rem;
-
     }
 
 
     .button{
-
-        font-size: 0.6rem;
-
+        font-size: 0.7rem;
     }
 
 
     #hearPhoneImage{
-
         width: 100%;
-
         height: 100%;
-
     }
 
-
     .optionContainer{
-
         display: none;
-
         flex-flow: row;
-
         height: 2rem;
         width: 100%;
-
         margin: 0;
-
         background: #190d58;
-
     }
 
 
     .menu-container{
-
         flex-flow: column;
-
         padding: 0;
-
         margin: 0;
-
     }
 
 
     #stackedMenuAccess:checked~.optionContainer{
-        
         display: flex;
-
     }
 
 
 
     #labelStackedMenuAccess{
-
         font-size: 1rem;
-
         visibility: visible;
-
         color:var(--gold);
         opacity: 1;
-
         transform: translateY(-1.1rem) translateX(5rem);
-
     }
 
-
     .menuOption{
-
-        font-size: 0.5rem;
-
+        font-size: 0.7rem;
         flex-flow: column;
         justify-content: center;
         text-align: center;
-
         margin:0;
-
         background: #190d58;
-
     }
-
 
     .image-logo{
-
-        font-size: 1.7rem;
-
+        font-size: 1.8rem;
         margin-bottom: 0%;
         padding: 0%;
-
         margin-left: 9.5rem;
-
     }
-
 
     .image-logo-container{
-
         transform: translateY(0.4rem) translateX(-6.5rem);
-
     }
 
-
     #textContainer{
-
         margin-top: 0;
-
     }
 
 
     #socialMediaTitle{
-
-
         font-size: 0.65rem;
-
     }
 
 
     .socialMediaIcon{
-
         width: 1rem;
         height: 1rem;
-
     }
 
 
     .footerSection{
-
         justify-content: center;
-
+        align-items:; center;
         margin-right: 0.2rem;
-
+        padding: 1.8rem 0 0 0;
     }
 
+    #footerFeatures{
+      justify-content: center;
+      align-items: center;
+    }
 
     #socialMediaInconsBox{
-
         gap: 0.5rem;
-
     }
 
     
@@ -657,6 +552,10 @@ body{
     
         margin-right: 1.5rem;
     
+    }
+    
+    .endOfThePage{
+      height: 45%;
     }
     
 
