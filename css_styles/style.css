@@ -467,7 +467,7 @@ body{
         visibility: visible;
         color:var(--gold);
         opacity: 1;
-        transform: translateY(-1.1rem) translateX(5rem);
+        transform: translateY(-1.1rem) translateX(2rem);
     }
 
     .menuOption{
